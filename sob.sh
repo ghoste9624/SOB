@@ -5,6 +5,7 @@ clear && echo -e "\e[1;92m"
       content=$(curl -s "$domain")
       whois $domain
       curl -i https://$domain/page
+      curl -i http://$domain/page
       echo -e "\e[1;96m"
       nslookup $domain
       echo -e "\e[1;94m"
